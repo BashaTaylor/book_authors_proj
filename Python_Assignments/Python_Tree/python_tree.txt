@@ -1,0 +1,159 @@
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/Desktop/PT_Python_Stack
+$ tree.com
+Folder PATH listing for volume Windows
+Volume serial number is C421-4302     
+C:.
+├───Django
+│   ├───Django_Fullstack
+│   ├───Django_Fundamentals
+│   └───Django_Orm
+├───Envirnoments
+│   └───PythonEnv
+│       ├───Include
+│       ├───Lib
+│       │   ├───site-packages
+│       │   │   ├───click
+│       │   │   │   └───__pycache__
+│       │   │   ├───click-8.0.1.dist-info
+│       │   │   ├───colorama
+│       │   │   │   └───__pycache__
+│       │   │   ├───colorama-0.4.4.dist-info
+│       │   │   ├───dataclasses-0.8.dist-info
+│       │   │   ├───flask
+│       │   │   │   ├───json
+│       │   │   │   │   └───__pycache__
+│       │   │   │   └───__pycache__
+│       │   │   ├───Flask-2.0.1.dist-info
+│       │   │   ├───importlib_metadata
+│       │   │   │   └───__pycache__
+│       │   │   ├───importlib_metadata-4.6.0.dist-info
+│       │   │   ├───itsdangerous
+│       │   │   │   └───__pycache__
+│       │   │   ├───itsdangerous-2.0.1.dist-info
+│       │   │   ├───jinja2
+│       │   │   │   └───__pycache__
+│       │   │   ├───Jinja2-3.0.1.dist-info
+│       │   │   ├───markupsafe
+│       │   │   │   └───__pycache__
+│       │   │   ├───MarkupSafe-2.0.1.dist-info
+│       │   │   ├───Misc
+│       │   │   │   └───NEWS.d
+│       │   │   │       └───next
+│       │   │   │           └───Library
+│       │   │   ├───pip
+│       │   │   │   ├───commands
+│       │   │   │   │   └───__pycache__
+│       │   │   │   ├───compat
+│       │   │   │   │   └───__pycache__
+│       │   │   │   ├───models
+│       │   │   │   │   └───__pycache__
+│       │   │   │   ├───operations
+│       │   │   │   │   └───__pycache__
+│       │   │   │   ├───req
+│       │   │   │   │   └───__pycache__
+│       │   │   │   ├───utils
+│       │   │   │   │   └───__pycache__
+│       │   │   │   ├───vcs
+│       │   │   │   │   └───__pycache__
+│       │   │   │   ├───_vendor
+│       │   │   │   │   ├───cachecontrol
+│       │   │   │   │   │   ├───caches
+│       │   │   │   │   │   │   └───__pycache__
+│       │   │   │   │   │   └───__pycache__
+│       │   │   │   │   ├───colorama
+│       │   │   │   │   │   └───__pycache__
+│       │   │   │   │   ├───distlib
+│       │   │   │   │   │   ├───_backport
+│       │   │   │   │   │   │   └───__pycache__
+│       │   │   │   │   │   └───__pycache__
+│       │   │   │   │   ├───html5lib
+│       │   │   │   │   │   ├───filters
+│       │   │   │   │   │   │   └───__pycache__
+│       │   │   │   │   │   ├───treeadapters
+│       │   │   │   │   │   │   └───__pycache__
+│       │   │   │   │   │   ├───treebuilders
+│       │   │   │   │   │   │   └───__pycache__
+│       │   │   │   │   │   ├───treewalkers
+│       │   │   │   │   │   │   └───__pycache__
+│       │   │   │   │   │   ├───_trie
+│       │   │   │   │   │   │   └───__pycache__
+│       │   │   │   │   │   └───__pycache__
+│       │   │   │   │   ├───lockfile
+│       │   │   │   │   │   └───__pycache__
+│       │   │   │   │   ├───packaging
+│       │   │   │   │   │   └───__pycache__
+│       │   │   │   │   ├───pkg_resources
+│       │   │   │   │   │   └───__pycache__
+│       │   │   │   │   ├───progress
+│       │   │   │   │   │   └───__pycache__
+│       │   │   │   │   ├───requests
+│       │   │   │   │   │   ├───packages
+│       │   │   │   │   │   │   ├───chardet
+│       │   │   │   │   │   │   │   └───__pycache__
+│       │   │   │   │   │   │   ├───urllib3
+│       │   │   │   │   │   │   │   ├───contrib
+│       │   │   │   │   │   │   │   │   └───__pycache__
+│       │   │   │   │   │   │   │   ├───packages
+│       │   │   │   │   │   │   │   │   ├───ssl_match_hostname
+│       │   │   │   │   │   │   │   │   │   └───__pycache__
+│       │   │   │   │   │   │   │   │   └───__pycache__
+│       │   │   │   │   │   │   │   ├───util
+│       │   │   │   │   │   │   │   │   └───__pycache__
+│       │   │   │   │   │   │   │   └───__pycache__
+│       │   │   │   │   │   │   └───__pycache__
+│       │   │   │   │   │   └───__pycache__
+│       │   │   │   │   ├───webencodings
+│       │   │   │   │   │   └───__pycache__
+│       │   │   │   │   └───__pycache__
+│       │   │   │   └───__pycache__
+│       │   │   ├───pip-9.0.1.dist-info
+│       │   │   ├───pkg_resources
+│       │   │   │   ├───extern
+│       │   │   │   │   └───__pycache__
+│       │   │   │   ├───_vendor
+│       │   │   │   │   ├───packaging
+│       │   │   │   │   │   └───__pycache__
+│       │   │   │   │   └───__pycache__
+│       │   │   │   └───__pycache__
+│       │   │   ├───setuptools
+│       │   │   │   ├───command
+│       │   │   │   │   └───__pycache__
+│       │   │   │   ├───extern
+│       │   │   │   │   └───__pycache__
+│       │   │   │   └───__pycache__
+│       │   │   ├───setuptools-28.8.0.dist-info
+│       │   │   ├───typing_extensions-3.10.0.0.dist-info
+│       │   │   ├───werkzeug
+│       │   │   │   ├───debug
+│       │   │   │   │   ├───shared
+│       │   │   │   │   └───__pycache__
+│       │   │   │   ├───middleware
+│       │   │   │   │   └───__pycache__
+│       │   │   │   ├───sansio
+│       │   │   │   │   └───__pycache__
+│       │   │   │   ├───wrappers
+│       │   │   │   │   └───__pycache__
+│       │   │   │   └───__pycache__
+│       │   │   ├───Werkzeug-2.0.1.dist-info
+│       │   │   ├───zipp-3.5.0.dist-info
+│       │   │   └───__pycache__
+│       │   └───tcl8.6
+│       └───Scripts
+├───Python_Assignments
+│   ├───For_Loops_Basic_I
+│   ├───Functions_Basic_I
+│   ├───Functions_Basic_II
+│   ├───Functions_Intermediate_I
+│   ├───Hello_World_#1
+│   ├───Practice
+│   ├───Practice_Using_pip
+│   ├───Python_Loops_Predict
+│   ├───Python_Syntax
+│   └───Python_Tree
+└───_Python
+    ├───OOP
+    └───Python_fundamentals
+
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/Desktop/PT_Python_Stack
+$ ls
+_Python/  Django/  Envirnoments/  Python_Assignments/

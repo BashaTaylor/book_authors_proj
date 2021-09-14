@@ -1,0 +1,21 @@
+Assignment: Practice using pip in a virtual environment
+
+
+pip - is a package-management system written in Python used to install and manage software packages. It connects to an online repository of public packages, called the Python Package Index.
+
+pip list - list of installed packages
+
+deactivate - deactivates virtual environment
+
+pip3 list - it lists packages in non-virtual evironment; the list is the same except for my Python virtual environment (Python_vEnv) is in parentheses
+
+pip install Django==1.11.9 - this commands displays: Requirement already satisfied: Django==1.11.9 in c:\users\basha\appdata\local\programs\python\python36\lib\site-packages
+Requirement already satisfied: pytz in c:\users\basha\appdata\local\programs\python\python36\lib\site-packages (from Django==1.11.9)
+You are using pip version 9.0.1, however version 21.1.3 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+ pip freeze - id does not have pip (9.0.1), setuptools (28.8.0), and Deprecatuion message.
+
+ cd ~/Desktop AND THEN pip freeze > requirements.txt - lists all my files in my Desktop directory
+
+
