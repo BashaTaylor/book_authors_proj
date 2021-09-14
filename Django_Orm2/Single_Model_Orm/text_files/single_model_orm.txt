@@ -1,0 +1,223 @@
+Users.objects.create(first_name="Lexi ", last_name="Taylor", email_address="lexitaylor@gmail.com", age="15")
+Users.objects.create(first_name="Chloe ", last_name="Taylor", email_address="chloetaylor@gmail.com", age="14")
+Users.objects.create(first_name="Mia ", last_name="Davis", email_address="mdavis@gmail.com", age="7")
+
+
+ravenclaws = Wizard.objects.filter(house="Ravenclaw")
+
+lexi = Users.objects.get(f"first_name", "last_name")
+
+Users.objects.all()
+Users.objects.last()
+Users.objects.first()
+
+basha@BashDESKTOP-V8HPRHJ MINGW64 /
+$ cd
+
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~
+$ cd OneDrive/desktop
+
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop
+$ cd PT_Python_Stack/Django/
+
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django
+$ cd ..
+
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack
+$ cd Envirnoments/
+
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Envirnoments
+$ source djangoPy3env/Scripts/activate
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Envirnoments
+$ cd ..
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack
+$ cd Django/Django_Orm2
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/Django_Orm2
+$ cd single_model_orm/
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/Django_Orm2/single_model_orm$ python manage.py makemi
+  No migrations to apply.
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/Django_Orm2/single_model_orm$ code .
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/Django_Orm2/single_model_orm$ python manage.py makemi
+No changes detected
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/Django_Orm2/single_model_orm$ python manage.py migrat
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  No migrations to apply.
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/Django_Orm2/single_model_orm$ python manage.py shell
+Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:54:40) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from users_app.models import *
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Django\Django_Orm2\single_model_orm\users_app\models.py", line 4, in <mod
+    class Users(models.Model):
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\db\models\base.py", li
+    "INSTALLED_APPS." % (module, name)
+RuntimeError: Model class users_app.models.Users doesn't declare an explicit app_label and isn't in an application in INSTALLED_A
+>>> from users_app.models *
+  File "<console>", line 1
+    from users_app.models *
+                          ^
+SyntaxError: invalid syntax
+>>> from users_app.models *
+  File "<console>", line 1
+    from users_app.models *
+                          ^
+SyntaxError: invalid syntax
+>>> from users_app.models import *
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/Django_Orm2/single_model_orm
+$ python manage.py start ^C
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/Django_Orm2/single_model_orm
+$ python manage.py shell
+Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:54:40) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from users_app.models import *
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Django\Django_Orm2\single_model_orm\users_app\models.py", line 4, in <mod
+e>
+    class Users(models.Model):
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\db\models\base.py", li
+ 111, in __new__
+    "INSTALLED_APPS." % (module, name)
+RuntimeError: Model class users_app.models.Users doesn't declare an explicit app_label and isn't in an application in INSTALLED_A
+S.
+>>> from users_app.models import *
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Django\Django_Orm2\single_model_orm\users_app\models.py", line 4, in <mod
+e>
+    class Users(models.Model):
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\db\models\base.py", li
+ 111, in __new__
+    "INSTALLED_APPS." % (module, name)
+RuntimeError: Model class users_app.models.Users doesn't declare an explicit app_label and isn't in an application in INSTALLED_A
+S.
+>>> exit()
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/Django_Orm2/single_model_orm
+$ python manage.py makemigrations
+Migrations for 'users_app':
+  users_app\migrations\0001_initial.py
+    - Create model Users
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/Django_Orm2/single_model_orm
+$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, users_app
+Running migrations:
+  Applying users_app.0001_initial... OK
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/Django_Orm2/single_model_orm
+$ python manage.py shell
+Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:54:40) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from users_app.models import *
+>>> Users.objects.create(first_name="Lexi ", last_name="Taylor", email_address="lexitaylor@gmail.com", age="15")
+<Users: Users object (1)>
+>>> Users.objects.create(first_name="Chloe ", last_name="Taylor", email_address="chloetaylor@gmail.com", age="14")
+<Users: Users object (2)>
+>>> Users.objects.create(first_name="Mia ", last_name="Davis", email_address="mdavis@gmail.com", age="7")
+<Users: Users object (3)>
+>>> lexi = User.objects.get(f"first_name", "last_name")
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'User' is not defined
+>>> lexi = Users.objects.get(f"first_name", "last_name")
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\db\models\manager.py",
+ line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\db\models\query.py", l
+ine 399, in get
+    clone = self.filter(*args, **kwargs)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\db\models\query.py", l
+ine 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\db\models\query.py", l
+ine 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\db\models\sql\query.py
+", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\db\models\sql\query.py
+", line 1318, in _add_q
+    split_subq=split_subq, simple_col=simple_col,
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\db\models\sql\query.py
+", line 1187, in build_filter
+    arg, value = filter_expr
+ValueError: too many values to unpack (expected 2)
+>>> CURRENT_USER(:
+  File "<console>", line 1
+    CURRENT_USER(:
+                 ^
+SyntaxError: invalid syntax
+>>> Users.objects.retrieve('first_name', 'last_name')
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'Manager' object has no attribute 'retrieve'
+>>> Users.objects.filter('firts_name', 'last_name')
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\db\models\manager.py",
+ line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\db\models\query.py", l
+ine 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\db\models\query.py", l
+ine 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\db\models\sql\query.py
+", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\db\models\sql\query.py
+", line 1318, in _add_q
+    split_subq=split_subq, simple_col=simple_col,
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\db\models\sql\query.py
+", line 1187, in build_filter
+    arg, value = filter_expr
+ValueError: too many values to unpack (expected 2)
+>>> Users.objects.all()
+<QuerySet [<Users: Users object (1)>, <Users: Users object (2)>, <Users: Users object (3)>]>
+>>> Users.objects.last()
+<Users: Users object (3)>
+>>> Users.objects.first()
+<Users: Users object (1)>
+>>> last_name_to_update = Users.objects.get(id=3)
+>>> last_name_to update.description = "Davis"
+  File "<console>", line 1
+    last_name_to update.description = "Davis"
+                      ^
+SyntaxError: invalid syntax
+>>> last_name_to_update.description = "Davis"
+>>> last_name_to_update.last_name = "Pancakes"
+>>> last_name_update.save()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'last_name_update' is not defined
+>>> UsersUpdate = Users.objects.get(id=3)
+>>> UsersUpdate.last_name = "Pancakes"
+>>> UserUpdate.save()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'UserUpdate' is not defined
+>>> last_name_to_update.save()
+>>>

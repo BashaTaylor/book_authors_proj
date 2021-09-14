@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 100pv;
+    min-height: 778px;
+    padding: 30px;
+    font-family: Lora, serif;
+    background-size: cover;
+    background-image: url(./galaxy.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px 10px 0 10px;
+    
+}
+
+#go_back_link {
+    color: white;
+    display: inline-block;
+    text-align: right;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    display: flex;
+    text-shadow: 0 10px 10px rgba(30, 5, 122, 0.965);
+    color: rgb(123, 202, 27);
+}
+
+.net_rel_div {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+}
+
+#network_date1 {
+    display: flex;
+    flex-direction: row;
+}
+
+#network_date2 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#date_label {
+    margin-left: 9px;
+}
+
+#date_box {
+    height: 16px;
+    width: 132px;
+    margin-left: 9px;
+}
+#create_button {
+    display: block;
+    margin: 20px auto 20px auto;
+    box-shadow: 7px 10px rgba(23, 8, 123, 0.42);
+}
+
+
+/* #page2 {
+    background-image: url("https://i.loli.net/2019/10/18/uXF1Kx7lzELB6wf.jpg");
+}
+
+#page3 {
+    background-image: url("https://i.loli.net/2019/11/16/FLnzi5Kq4tkRZSm.jpg");
+}
+
+#page4 {
+    background-image: url("https://i.loli.net/2019/10/18/buDT4YS6zUMfHst.jpg");
+} */

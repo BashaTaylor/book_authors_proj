@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+//     <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <title>Home/Quotes</title>
+</head>
+
+<body>
+    {% if messages %}
+    <div id='errors'>
+        {% for message in messages %}
+        <p>- {{message}} -</p>
+        {% endfor %}
+    </div>
+    {% endif %}
+    <div id='header'>
+        <h1>Welcome, {{ my_user.first_name }} !</h1>
+        <a href="/logout">Log Out</a>
+    </div>
+    <hr>
+
+    <div id="main">
+        <div id='left_container'>
+            <h3>Quotable Quotes</h3>
+            {% for quote in all_quotes %}
+            <div class="posted_quote">
+                {% if my_user.id == quote.posted_by.id %}
+                <div id="edit_delete">
+                    <form action="/home/{{quote.id}}/edit" method="GET">
+                        {% csrf_token %}
+                        <input type="submit" class="buttons" id="edit_btn" value='Edit'>  
+                    </form><br>
+                    <form action="/home/{{quote.id}}/delete" method="post">
+                        {% csrf_token %}
+                        <input type="submit" class="buttons" value='Delete'>
+                    </form>
+                </div>
+                {% endif %}
+                <p>{{ quote.quoted_by }}: {{ quote.message }}</p>
+                <p>Posted by <a href="/users/{{ quote.posted_by.id }}">{{ quote.posted_by.first_name }}</a></p>
+                <form action="/home/{{quote.id}}/favorite" method="post">
+                    {% csrf_token %}
+                    <input type="submit" class="buttons" id="add_btn" value='Add to Favorite'>
+                </form>
+            </div>
+            {% endfor %}
+        </div>
+        <div id="right_container">
+            <h3>Your Favorites</h3>
+            {% for favorite in my_favorites %}
+            <div class="posted_quote" >
+                <p>{{ my_favorites.quote_id.quoted_by }}: "{{ my_favorites.quote_id.message }}"</p>
+                <p>Posted by <a href="">{{ all_quotes.posted_by_id.first_name }}</a></p>
+            </div>
+            {% endfor %}
+            <br><br>
+            <div>
+                <h3>Contribute a Quote</h3>
+                <form action="/create" method="post">
+                    {% csrf_token %}
+                    <label for="quoted_by">Quoted By</label>
+                    <input type="text" name="quoted_by">
+                    <label for="message">Message</label>
+                    <input type="text_area" name='message'>
+                    <input type="submit" value='Submit'>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

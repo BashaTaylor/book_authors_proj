@@ -1,0 +1,722 @@
+
+basha@BashDESKTOP-V8HPRHJ MINGW64 /
+$ cd
+
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~
+$ cd OneDrive/desktop
+
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop
+$ cd PT_Python_Stack/
+
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack
+$ cd Envirnoments/
+
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Envirnoments
+$ source djangoPy3Env/Scripts/activate
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Envirnoments
+$ cd ..
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack
+$ cd Django/
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django
+$ django_admin startproject single_model_orm
+bash: django_admin: command not found
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django
+$ django-admin startproject single_model_orm
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django
+$ cd single_model_orm/
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ python manage.py startapp users_app
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ cd users_app
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm/users_app
+$ mkdir static folder
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm/users_app
+$ ls
+__init__.py  admin.py  apps.py  folder/  migrations/  models.py  static/  tests.py  views.py
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm/users_app
+$ mkdir templates
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm/users_app
+$ cd templates
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm/users_app/temp
+$ touch home_page.html
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm/users_app/temp
+$ cd ..
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm/users_app
+$ cd css
+bash: cd: css: No such file or directory
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm/users_app
+$ cd static/css
+bash: cd: static/css: No such file or directory
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm/users_app
+$ rm directory_css
+rm: cannot remove 'directory_css': No such file or directory
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm/users_app
+$ ls
+__init__.py  admin.py  apps.py  folder/  migrations/  models.py  static/  templates/  tests.py  views.py
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm/users_app
+$ cd templates/
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm/users_app/temp
+$ ls
+home_page.html
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm/users_app/temp
+$ cd ..
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm/users_app
+$ cd static/
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm/users_app/stat
+$ mkdir css
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm/users_app/stat
+$ cd css
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm/users_app/stat
+$ style.css
+bash: style.css: command not found
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm/users_app/stat
+$ cd ..
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm/users_app/stat
+$ cd css
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm/users_app/stat
+$ touch style.css
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm/users_app/stat
+$ ls
+style.css
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm/users_app/stat
+$ cd ..
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm/users_app/stat
+$ cd ..
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm/users_app
+$ cd ..
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for a
+admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+July 31, 2021 - 16:23:46
+Django version 2.2, using settings 'single_model_orm.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[31/Jul/2021 16:23:56] "GET / HTTP/1.1" 200 16348
+[31/Jul/2021 16:23:56] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[31/Jul/2021 16:23:57] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[31/Jul/2021 16:23:57] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[31/Jul/2021 16:23:57] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ code .
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ cd users_app/
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm/users_app
+$ touch urls.py
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm/users_app
+$ cd ..
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ python manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+nagement\__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+nagement\__init__.py", line 357, in execute
+    django.setup()
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+_.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+gistry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+nfig.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Users\basha\AppData\Local\Programs\Python\Python36\lib\importlib\__init__.py", line 126, in impo
+le
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Django\single_model_orm\users_app\models.py", line
+    def __str_(self)
+                   ^
+SyntaxError: invalid syntax
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ python manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+nagement\__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+nagement\__init__.py", line 357, in execute
+    django.setup()
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+_.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+gistry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+nfig.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Users\basha\AppData\Local\Programs\Python\Python36\lib\importlib\__init__.py", line 126, in impo
+le
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Django\single_model_orm\users_app\models.py", line
+module>
+    class User(models.Model):
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Django\single_model_orm\users_app\models.py", line
+User
+    updated_at = models.DateTimeField(auto_=True)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+ls\fields\__init__.py", line 1160, in __init__
+    super().__init__(verbose_name, name, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'auto_'
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ python manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+nagement\__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+nagement\__init__.py", line 357, in execute
+    django.setup()
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+_.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+gistry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+nfig.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Users\basha\AppData\Local\Programs\Python\Python36\lib\importlib\__init__.py", line 126, in impo
+le
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Django\single_model_orm\users_app\models.py", line
+module>
+    class User(models.Model):
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Django\single_model_orm\users_app\models.py", line
+User
+    updated_at = models.DateTimeField(auto_=True)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+ls\fields\__init__.py", line 1160, in __init__
+    super().__init__(verbose_name, name, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'auto_'
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ python manage.py migrate
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+nagement\__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+nagement\__init__.py", line 357, in execute
+    django.setup()
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+_.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+gistry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+nfig.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Users\basha\AppData\Local\Programs\Python\Python36\lib\importlib\__init__.py", line 126, in impo
+le
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Django\single_model_orm\users_app\models.py", line
+module>
+    class User(models.Model):
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Django\single_model_orm\users_app\models.py", line
+User
+    updated_at = models.DateTimeField(auto_=True)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+ls\fields\__init__.py", line 1160, in __init__
+    super().__init__(verbose_name, name, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'auto_'
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ python manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+nagement\__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+nagement\__init__.py", line 357, in execute
+    django.setup()
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+_.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+gistry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+nfig.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Users\basha\AppData\Local\Programs\Python\Python36\lib\importlib\__init__.py", line 126, in impo
+le
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Django\single_model_orm\users_app\models.py", line
+module>
+    class User(models.Model):
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Django\single_model_orm\users_app\models.py", line
+User
+    updated_at = models.DateTimeField(auto_=True)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+ls\fields\__init__.py", line 1160, in __init__
+    super().__init__(verbose_name, name, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'auto_'
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ python manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+ement\__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+ement\__init__.py", line 357, in execute
+    django.setup()
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+y", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+try.py", line 114, in populate
+    app_config.import_models()
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+g.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Users\basha\AppData\Local\Programs\Python\Python36\lib\importlib\__init__.py", line 126, in impo
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Django\single_model_orm\users_app\models.py", line
+ule>
+    class User(models.Model):
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Django\single_model_orm\users_app\models.py", line
+r
+    updated_at = models.DateTimeField(auto_=True)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+fields\__init__.py", line 1160, in __init__
+    super().__init__(verbose_name, name, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'auto_'
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ python manage.py migrate
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+ement\__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+ement\__init__.py", line 357, in execute
+    django.setup()
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+y", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+try.py", line 114, in populate
+    app_config.import_models()
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+g.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Users\basha\AppData\Local\Programs\Python\Python36\lib\importlib\__init__.py", line 126, in impo
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Django\single_model_orm\users_app\models.py", line
+ule>
+    class User(models.Model):
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Django\single_model_orm\users_app\models.py", line
+r
+    updated_at = models.DateTimeField(auto_=True)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+fields\__init__.py", line 1160, in __init__
+    super().__init__(verbose_name, name, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'auto_'
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ python manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+ement\__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+ement\__init__.py", line 357, in execute
+    django.setup()
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+y", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+try.py", line 114, in populate
+    app_config.import_models()
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+g.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Users\basha\AppData\Local\Programs\Python\Python36\lib\importlib\__init__.py", line 126, in impo
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Django\single_model_orm\users_app\models.py", line
+ule>
+    class User(models.Model):
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Django\single_model_orm\users_app\models.py", line
+r
+    updated_at = models.DateTimeField(auto_=True)
+  File "C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\lib\site-packages\django\
+fields\__init__.py", line 1160, in __init__
+    super().__init__(verbose_name, name, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'auto_'
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying sessions.0001_initial... OK
+  Applying users_app.0001_initial... OK
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ phython manage.py shell
+bash: phython: command not found
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ python manage.py shell
+Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:54:40) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from users_app.models import *
+
+
+
+>>> dojo_one = Dojo.objects.create(name='Smiley', city='New York', state='NY')
+>>> dojo_two = Dojo.objects.create(name='Grupmy', city='Chicago', state='IL')
+>>> dojo_three = Dojo.objects.create(name='Sleepy', city='Los Angeles', state='CA')
+
+>>> dojo_one = Dojo.objects.create(name='Jonathan', city='Tempa,', state='FL')
+>>> dojo_two = Dojo.objects.create(name='Josh', city='Washington,', state='DC')
+>>> dojo_three = Dojo.objects.create(name='Jason', city='San Diego,', state='CA')
+
+
+
+
+
+  File "<console>", line 1
+    User.objects.create(first_name='Lexi', last_name='Taylor', email_address='lexiT@gmail.com, age=15)
+                                                                                                     ^
+SyntaxError: EOL while scanning string literal
+>>> User.objects.create(first_name='Lexi', last_name='Taylor', email='lexiT@gmail.com, age=15)
+  File "<console>", line 1
+    User.objects.create(first_name='Lexi', last_name='Taylor', email='lexiT@gmail.com, age=15)
+                                                                                             ^
+SyntaxError: EOL while scanning string literal
+>>> User.objects.create(first_name='Lexi', last_name='Taylor', email='lexiT@gmail.com', age=15)
+<User: User object (1)>
+>>> User.objects.create(first_name='Chloe', last_name='Taylor', email='ctaylor@gmail.com', age=14)
+<User: User object (2)>
+>>> User.objects.create(first_name='Molly', last_name='Taylor', email='mollyT@gmail.com', age=7)
+<User: User object (3)>
+>>> User.objects.all()
+<QuerySet [<User: User object (1)>, <User: User object (2)>, <User: User object (3)>]>
+>>> exit()
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ python manage.py makemigrations
+No changes detected
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, users_app
+Running migrations:
+  No migrations to apply.
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ python manage.py shell
+Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:54:40) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from users_app.models import *
+>>> User.objects.create(first_name='Lexi', last_name='Taylor', email='lexitaylor@gmail.com', age=15)
+<User: User object (4)>
+>>> User.objects.all()
+<QuerySet [<User: User object (1)>, <User: User object (2)>, <User: User object (3)>, <User: User object (4
+>>> exit()
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ python manage.py makemigrations
+No changes detected
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, users_app
+Running migrations:
+  No migrations to apply.
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ python manage.py shell
+Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:54:40) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> User.objects.all()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'User' is not defined
+>>> from users_app import *
+>>> User.object.all()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'User' is not defined
+>>> exit()
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ pytnon manage.py makemigrations
+bash: pytnon: command not found
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ python manage.py makemigrations
+No changes detected
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, users_app
+Running migrations:
+  No migrations to apply.
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ python manage.py shell
+Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:54:40) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from users_app.models import *
+>>> user1=User.object.get(id=1)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: type object 'User' has no attribute 'object'
+>>> user1=User.objects.get(id=1)
+>>> user1.first_name
+'Lexi'
+>>> User.object.all()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: type object 'User' has no attribute 'object'
+>>> exit()
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ python manage.py shell
+Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:54:40) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> user.object.all()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'user' is not defined
+>>> User.object.all()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'User' is not defined
+>>> from users_a;;.models import *
+  File "<console>", line 1
+    from users_a;;.models import *
+                ^
+SyntaxError: invalid syntax
+>>> from users_app.models import *
+>>> User.objects.all()
+<QuerySet [<User: User object (1)>, <User: User object (2)>, <User: User object (3)>, <User: User object (4
+>>> exit()
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ python manage.py shell
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from users_app.models import *
+>>> User.object.all()
+Traceback (most recent call last):
+)>]>
+>>> exit()
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ python manage.py shell
+Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:54:40) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+$ python manage.py migrations
+Unknown command: 'migrations'. Did you mean showmigrations?
+Type 'manage.py help' for usage.
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ python manabe.py makemigrations
+C:\Users\basha\OneDrive\desktop\PT_Python_Stack\Envirnoments\djangoPy3Env\Scripts\python.exe: can't open fi
+le 'manabe.py': [Errno 2] No such file or directory
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ python manage.py makemigrations
+No changes detected
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, users_app
+Running migrations:
+  No migrations to apply.
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ python manage.py shell
+Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:54:40) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from users_app.models import *
+>>> User.objects.all()
+<QuerySet [<Lexi, Taylor)>, <Chloe, Taylor)>, <Molly, Taylor)>, <Lexi, Taylor)>]>
+>>> User.objects.last()
+<Lexi, Taylor)>
+>>> User.objects.first()
+<Lexi, Taylor)>
+>>> Userupdate=User.objects.get(id=3)
+>>> Userupdate.last_name='Pancakes'
+>>> Userupdate.save()
+>>> User.objects.all()
+<QuerySet [<Lexi, Taylor)>, <Chloe, Taylor)>, <Molly, Pancakes)>, <Lexi, Taylor)>]>
+>>> user.objects.get(id=1).delete()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'user' is not defined
+>>> User.objects.get(id=1).delete()
+(1, {'users_app.User': 1})
+>>> User.objects.all()
+<QuerySet [<Chloe, Taylor)>, <Molly, Pancakes)>, <Lexi, Taylor)>]>
+>>> User.objects.order_by('first_name')
+<QuerySet [<Chloe, Taylor)>, <Lexi, Taylor)>, <Molly, Pancakes)>]>
+>>> User.objects.order_by('-first_name')
+<QuerySet [<Molly, Pancakes)>, <Lexi, Taylor)>, <Chloe, Taylor)>]>
+>>> exit()
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$ touch users_shell.txt
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/single_model_orm
+$

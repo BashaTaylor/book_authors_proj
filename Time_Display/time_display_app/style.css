@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+#container {
+    width: 980px;
+    height: 350px;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(109, 238, 245);
+    flex-direction: column;
+    padding: 20px;
+    
+}
+
+#numbers {
+    text-align: center;
+    /* justify-content: center; */
+    display: flex;
+    
+    border: solid black 2px ;
+    width: 600px;
+    color: white;
+    background-color: lightblue;
+}
+
+#letters{
+    text-align: center;
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    border-radius: solid black 2px;
+    width: 400px;
+    color: violet;
+    background-color: lightblue;
+}

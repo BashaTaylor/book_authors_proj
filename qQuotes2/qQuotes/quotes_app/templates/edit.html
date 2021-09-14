@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+//     <link rel="stylesheet" href="{% static 'css/edit.css' %}">
+    <title>Edit Page</title>
+</head>
+<body>
+    {% if messages %}
+    <div id='errors'>
+        {% for message in messages %}
+            <p>- {{message}} -</p>
+        {% endfor %}
+    </div>
+    {% endif %}
+    <div id="header"><a href="/home">Dashboard</a> | <a href="/logout">Log Out</a></div>
+    <hr>
+    <div id="container">
+        <form action="/home/{{this_quote.id}}/update" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label class="label_1" for="quoted_by">Quoted By</label>
+                <input type="text" value="{{this_quote.quoted_by}}" name="quoted_by">
+            </div>
+            <div class="form-group">
+                <label class="label_1" for="message">Message</label>
+                <input type="text_area" cols="30" rows="6" value="{{this_quote.message}}" name='message'>
+            </div>
+            <div class="form-group">
+                <input type="submit" value='Cancel'>
+                <input type="submit" value='Submit'>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

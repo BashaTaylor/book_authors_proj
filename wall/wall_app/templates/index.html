@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+
+<body>
+    <div id='wrap'>
+        {% if messages %}
+            <div id='errors'>
+                {% for message in messages %}
+                    <p>- {{message}} -</p>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        <div id="container">
+            <div class='registrations'>
+                <h1>Register:</h1>
+                <form action="/register" method=POST>
+                    {% csrf_token %}
+                    First Name: <input type="text" name='fname'>
+                    Last Name: <input type="text" name='lname'>
+                    Email: <input type="text" name='email'>
+                    Password: <input type="password" name='pw'>
+                    Confirm PW: <input type="password" name='confpw'>
+                    <input type="submit" value='Create User'>
+                </form>
+            </div>
+            <div class='login'>
+                <h1>Login:</h1>
+                <form action="/login" method=POST>
+                    {% csrf_token %}
+                    Email: <input type="text" name='email'>
+                    Password: <input type="password" name='pw'>
+                    <input type="submit" value='Login'>
+                </form>
+            </div>
+        </div>
+        <div id="bottom">
+            <p id="quote">“The more that you read, the more things you will know. The more that you learn, the more places you'll go.” <br> ― Dr. Seuss</p>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>

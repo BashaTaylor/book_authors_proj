@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}	
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Plant Survey</title>
+</head>
+<body>
+    <div class="nav">
+        <h1>Fill out the form:</h1><br>
+    </div>
+        <div id=container>
+        
+        <form action="/process" method="POST">
+            <!-- security protocol- csrf is a cross site forgery request and it must be on every form-->
+            {% csrf_token %}
+            Your Name: <input type="text" name='name'> <br><br>
+            <h2>What is your favorite plant and it's color?</h3>
+            Select Plant: <br>
+                <label for="rose">Rose</label> 
+                <input value="Rose" type="radio" id="plant" name="plant"><br>
+                <label for="mendavilla">Mendavilla</label>
+                <input value="Mendavilla" type="radio" id="plant" name="plant"><br>
+                <label for="hibiscus">Hibiscus</label>
+                <input value="Hibiscus" type="radio" id="plant" name="plant"><br>
+                <label for="cana lilly">Cana Lilly</label>
+                <input value="Cana lilly" type="radio" id="plant" name="plant"><br>
+                <label for="hosta">Hosta</label>
+                <input value="Hosta" type="radio" id="plant" name="plant"><br>
+                <label for="million bells">Million Bells</label>
+                <input value="Million bells" type="radio" id="plant" name="plant"><br>
+            
+            Select Color: <br>
+                <label for="red">Red</label>
+                <input value="Red" type="checkbox" id="color" name="color"><br>
+                <label for="yellow">Yellow</label>
+                <input value="Yellow" type="checkbox" id="color" name="color"><br>
+                <label for="pink">Pink</label>
+                <input value="Pink" type="checkbox" id="color" name="color"><br>
+                <label for="white">White</label>
+                <input value="White" type="checkbox" id="color" name="color"><br>
+                <label for="purple">Purple</label>
+                <input value="Purple" type="checkbox" id="color" name="color"><br>
+                <label for="orange">Orange</label>
+                <input value="Orange" type="checkbox" id="color" name="color"><br><br>
+            <input type="submit" value="Select">
+        </form>
+        
+    </div>
+</body>
+</html>

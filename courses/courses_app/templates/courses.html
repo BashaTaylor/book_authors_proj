@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/courses.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Courses</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <h2>Add a new course</h2><br>
+        <form action="/courses/create" method="POST">
+            {% csrf_token %}
+            <div class="form-info">
+
+                {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                    <li class="message_tags">{{ message }}</li>
+                    {% endfor %}
+
+                </ul>
+                {% endif %}
+                <div id="input">
+                    <label for="course_name">Name</label>
+                    <input class="form-group" type="text" name="course_name" class="description">
+                </div>
+                <div id="form-info">
+                    <label for="text_area">Description: </label>
+                    <input name="description"  type="text" class="description" cols="44" rows="10">
+                </div>
+                <button id="add_btn" type="submit" class="btn float">Add</button>
+            </div> <br>
+
+            <div class="form_container">
+                <h2>Courses</h2>
+                <table>
+                    <thead>
+                        <th class="id_column">Course Name</th>
+                        <th class="row_line">Description</th>
+                        <th class="row_line">Date Added</th>
+                        <th class="row_line">Actions</th>
+                    </thead>
+                    <tbody>
+                        {% for course in courses %}
+                        <tr>
+                            <td class="id_column">{{ course.course_name }}</td>
+                            <td class="row_line">{{ course.description}}</td>
+                            <td class="row_line">{{ course.created_at|date:'M d Y P'}}</td>
+                            <td>
+                                <!-- <a href="courses/{{delete_course.id}}/delete"></a> -->
+                                <a href="/courses/{{course.id}}/show_comment" id="show_comment">Add/Show Comments</a>
+                                <!-- <a href="/courses/{{delete_course.id}}/delete" id="remove_link">Remove</a> -->
+                                <a href="/courses/{{course.id}}/delete" id="remove_link">Remove</a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+    </div>
+</body>
+
+</html>

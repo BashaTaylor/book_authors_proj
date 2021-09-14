@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>C+R Users</title>
+</head>
+
+<body>
+    <div id="main">
+
+        <div>
+            <h1>All the Users</h1>
+            <div id="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th class="row_line">Name</th>
+                            <th class="row_line">Email</th>
+                            <th class="row_line">Age</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for users in all_users %}
+                        <tr>
+                            <td>{{users.id}}</td>
+                            <td class="row_line">{{users.first_name}} {{users.last_name}}</td>
+                            <td class="row_line">{{users.email}}</td>
+                            <td class="row_line">{{users.age}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div>
+            <h1 id="heading1">Add a User</h1>
+            <form action='/user/create' method='POST'>
+                {% csrf_token %}
+                <div class="forms">
+                    <div class='input_fields'>
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name">
+                    </div>
+                    <div class='input_fields'>
+                        <label for="email">Email</label>
+                        <input type="email" name="email">
+                    </div>
+                </div>
+                <div class="forms">
+                    <div class='input_fields'>
+                        <label for="last_name">Last Name</label>
+                        <input type="text" name="last_name">
+                    </div>
+                    <div class='input_fields'>
+                        <label for="age">Age</label>
+                        <input type="number" name="age">
+                    </div>
+                </div>
+                <input id="add_button" type="submit" value='Add'>
+            </form>
+
+        </div>
+
+        <!-- <form action=""></form> -->
+    </div>
+
+</body>
+
+</html>

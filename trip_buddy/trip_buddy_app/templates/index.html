@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <title>Login and Registration</title>
+</head>
+
+<body>
+    <!-- We are creating a user. When a user makes a mistake, we'll let them know. -->
+    {% if messages %}
+    <ul class="messages">
+            {% for message in messages %}
+                <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+            {% endfor %}
+    </ul>
+    {% endif %}
+
+    <div id="container">
+
+        <div id="registration">
+            <h1>Welcome! Let's travel!</h1>
+            <form class="style_form" action="/users/create" method="POST">
+                <!-- add csrf token -->
+                {% csrf_token %}
+                <label>First Name: <input type="text" name="first_name"></label>
+                <label>Last Name: <input type="text" name="last_name"></label>
+                <label>Email: <input type="text" name="email"> </label>
+                <label>Password: <input type="password" name="password"></label>
+                <!-- we use type "password" when we just want to show a row of black dots (we will use this in the future)
+            We use type "text" if we just want to display the password. -->
+                <label>Confirm PW: <input type="password" name="confirm_pw"></label>
+                <button type="submit" value="register">Register</button>
+            </form>
+        </div>
+
+
+        <div id="login">
+            <h1>Login</h1>
+            <form class="style_form" action="/users/login" method="POST">
+                {% csrf_token %}
+                <label>Email: <input type="text" name="email"></label>
+                <label>Password: <input type="password" name="password"></label>
+                <button type="submit" value="Log In">Log In</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

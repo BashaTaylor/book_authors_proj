@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+#container {
+    width: 980px;
+    height: 551px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    background-image: url(./pexels-pixabay-326055.jpg);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#numbers {
+    border: solid rgb(49, 47, 47) 2px;
+    box-shadow: 7px 8px rgba(192, 192, 192, 0.489);
+    width: 350px;
+    background-color: rgba(255, 200, 0, 0.248);
+    color: rgb(218, 215, 231);
+    
+    
+}
+
+#letters{
+    border: solid rgb(49, 47, 47) 2px;
+    box-shadow: 7px 8px rgba(192, 192, 192, 0.489);
+    width: 400px;
+    height: 47px;
+    background: #51d8f656;
+    color: rgb(218, 215, 231);
+}

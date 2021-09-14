@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/new.css' %}">
+    <title>Add a New Trip</title>
+</head>
+
+<body>
+    <div id="container">
+        <a id="go_back_link" href="/">Logout</a>
+        <div id="main">
+            <h1>Hello {{this_user.first_name}}! Create a trip!</h1><br>
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            <form action="/create_trip" method="POST">
+                {% csrf_token %}
+                <div class="net_rel_div">
+                    <label id="title_tag" for="destination">Destination</label>
+                    <input type='text' name='destination'>
+                </div><br>
+
+                
+                <div class="start_date_div">
+                    <label for="start_date">Start Date</label>
+                    <input name="start_date" type='date' id="start_date"> 
+                </div><br>
+                <div id="end_date_div">
+                    <div class="end_date">
+                        <label for="end_date">End Date</label>
+                        <input type='date' name='end_date'><br>
+                    </div><br>
+                    <div id="plan_div">
+                        <div class="plan">
+                            <label for="plan">Plan</label>
+                            <input type='text' name='plan'><br>
+                        </div><br>
+                <a href="/dashboard">Cancel</a>
+                <button id="submit_button" type="submit">Submit</button>
+                <!-- <input id="create_button" type="submit" value='Create'> -->
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

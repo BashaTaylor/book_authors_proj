@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/trip.css' %}">
+    <title>View trip</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="links"><a href="/dashboard">Dashboard</a>
+            <a href="/">Logout</a>
+        </div>
+        <h1 class="paragraphs">Hello {{this_user.first_name}}! Read about this trip!</h1><br>
+
+        <h3 class="paragraphs">{{trip.destination}}</h3>
+        <div>
+            <p class="paragraphs">{{trip.start_date}}</p>
+            <p class="paragraphs">{{trip.end_date}}</p>
+            <!-- <p class="paragraphs">{{trip.created_on}}</p>
+            <p class="paragraphs">{{trip.updated_on}}</p> -->
+            <p class="paragraphs">{{trip.plan}}</p>
+            <p class="paragraphs">{{trip.created_by}}</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

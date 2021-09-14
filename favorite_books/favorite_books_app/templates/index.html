@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/books.css' %}">
+    <title>Main index page</title>
+</head>
+
+<body>
+
+    <div id="header">
+        <h1>Welcome, {{user.first_name}} {{user.last_name}}!</h1><br>
+        <a id="log_out_link" href="/">Log Out</a>
+    </div>
+    <div id="main">
+
+        <div class="wrapper">
+            <h2>Add a Favorite Book</h2>
+            {% if messages %}
+            <ul class="messages">
+                    {% for message in messages %}
+                        <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+                    {% endfor %}
+            </ul>
+            {% endif %}
+            <form action="/books/add" method="POST">
+                {% csrf_token %}
+                <div id="two_divs">
+                    <div id='favorite_div'>
+                        <label id="title_control" for="title">Title: </label>
+                        <input class="form-group" id="title_boxctrl" type="text" name="title" class="description">
+                    </div>
+                    <div id='favorite_div_2'>
+                        <label for="description">Description: </label>
+                        <textarea class="form-group" name="description" type="text" class="description" cols="34"
+                            rows="3"></textarea>
+                    </div>
+                </div>
+
+                <button id="add_btn" type="submit" class="btn float">Add</button>
+            </form>
+        </div>
+
+        <div id="bottom_div">
+            <h2>All Books</h2>
+            {% for book in all_books %}
+            
+
+                <h5><a href="/books/{{book.id}}" id="book_title">{{book.title}}</a></h5>
+
+            
+                <p>Added by {{book.uploaded_by.first_name}} {{book.uploaded_by.last_name}}</p>
+                {% if user in book.users_who_like.all %}
+                    <p>This is one of your favorites.</p>
+                {% else %}
+                    <a href="/books/{{book.id}}/favorite">Add to favorites</a>
+                {% endif %}
+            {% endfor %}
+            {% for book in all_books %}
+            {% if user not in book.users_who_like.all %}
+            <div class="row">
+                <h5><a href="/books/{{book.id}}">{{book.title}}</a></h5>
+                <p>(added by {{book.user.first_name}} {{book.user.last_name}})</p>
+            </div>
+            {% endif %}
+            {% endfor %}
+
+        </div>
+    </div>
+</body>
+
+</html>

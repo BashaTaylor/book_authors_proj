@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height: 95vh;
+    padding: 30px;
+    font-family: Lora, serif;
+    background-size: cover;
+    background-image: url(./backg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px 10px 0 10px;
+    padding: 20px;
+}

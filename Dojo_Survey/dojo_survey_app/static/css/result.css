@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#main_body {
+    width: 980px;
+    height: 540px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 30px;
+    background-image: url('images/in_the_garden.jpeg');
+    background-repeat: no-repeat;
+    color: white;
+    font-size: larger;
+    text-align: right;
+}

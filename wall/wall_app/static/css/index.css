@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Lora, serif;
+}
+
+body {
+    margin: 8px;
+}
+#container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 46vh;
+    /* background-color: rgba(0, 139, 139, 0.814); */
+    
+    margin: 10px 10px 0 10px;
+}
+
+#registration {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px;
+    align-items: center;
+}
+
+h1 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color:rgb(224, 175, 11);
+}
+#login {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px;
+    align-items: center;
+}
+
+.style_form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+label, input {
+    padding:5px;
+    
+}
+
+label {
+    color:rgb(241, 55, 9);
+}
+button {
+    align-items: flex-end;
+    margin: 5px;
+}
+
+#bottom{
+    height: 57vh;
+    padding: 20px;
+    background-size: cover;
+    background-image: url(./images/photo-1550379469-5a14b2ae1244\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#quote {
+    color: white;
+    font-size:larger;
+    font-weight: bold;
+    text-align: center;
+    width: 522px;
+    padding: 17px;
+}        
+    
+    

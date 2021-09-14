@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+    <title>Main Page</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Hello {{this_user.first_name}}!</h1><br>
+        <a class="top_links" href="/">Log Out</a>
+        <a class="top_links" href="/new">Create new trip!</a>
+    </div>
+    <div id="container">
+        <h3>Your trips:</h3>
+        <br>
+        <table id="top_table">
+            <thead>
+                <tr>
+                    <th class="row_line">Destination</th>
+                    <th class="row_line">Start Date</th>
+                    <th class="row_line">End Date</th>
+                    <th class="row_line">Plan Date</th>
+                    <th class="row_line" id="actions_position">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for trip in all_trips %}
+                <tr>
+                    <td class="row_line"><a href="/dashboard/{{trip.id}}/view">{{trip.destination}}</a></td>
+                    <td class="row_line">{{trip.start_date}}</td>
+                    <td class="row_line">{{trip.end_date}}</td>
+                    <td class="row_line">{{trip.plan}}</td>
+                    <td>
+                        <div id="links_buttons">
+                            {% if this_user.id == trip.created_by.id %}
+                            <form action="/dashboard/{{trip.id}}/delete" method="post" id="remove_links" >
+                                {% csrf_token %}
+                                <input type="submit" class="buttons" value='Remove'>
+                            </form>
+                            <a href="/dashboard/{{trip.id}}/edit">Edit</a>
+                            {% elif user.id == user_joined.id %}
+                            <a href="/dashboard/{{trip.id}}/cancel">Cancel</a>
+                            {%endif%}
+                        </div>
+                    </td>
+                </tr>
+
+                {% endfor %}
+            </tbody>
+        </table>
+        <h3 id="middle_h3">Other people's trips. [I COULDN'T GET IT TO WORK :( ]</h3>
+        <table id="bottom_table">
+            <thead>
+                <tr>
+                    <th class="row_line">Destination</th>
+                    <th class="row_line">Start Date</th>
+                    <th class="row_line">End Date</th>
+                    <th class="row_line">Plan Date</th>
+                    <th class="row_line" id="actions_position">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for trip in all_trips %}
+                <tr>
+                    {% if this_user.id != trip.created_by.id and this_user.id != trip.user_joined.id %}
+
+                    <td class="row_line">{{trip.destination}}</td>
+                    <td class="row_line">{{trip.start_date}}</td>
+                    <td class="row_line">{{trip.end_date}}</td>
+                    <td class="row_line">{{trip.plan}}</td>
+                    <td>
+                        <div id="links_buttons">
+                            <a id="trip_line" href="/dashboard/{{trip.id}}/join">Join</a>
+                            
+                            <!-- <form action="/dashboard/{{trip.id}}/delete" method="post" id="remove_links" >
+                                {% csrf_token %}
+                                <input type="submit" class="buttons" value='Remove'>
+                            </form> -->
+                            <!-- <a href="/dashboard/{{trip.id}}/edit">Edit</a> -->
+                            
+                            
+                            {%endif%}
+                        </div>
+                    </td>
+                </tr>
+
+                {% endfor %}
+            </tbody>
+        </table>
+</body>
+
+</html>

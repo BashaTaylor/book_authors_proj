@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    width: 980px;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    background-image: url(./tech_pic.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: lighten;
+    color: white;
+    margin: 5px 30px 0 30px;
+}
+
+h1 {
+    display: flex;
+    width: 980px;
+    justify-content:center;
+    align-items: center;
+    padding: 20px;
+}
+
+.input_fields {
+    display: flex;
+    justify-content: space-evenly;
+    padding:20px;
+    text-align: left;
+}
+
+
+#container {
+    display: flex;
+    justify-content:center;
+    padding-bottom: 20px;
+    
+}
+
+table {
+    width: 660px;
+    align-items:center;
+    justify-content: space-between;
+    border: solid 2px rgb(212, 2, 135);
+    text-align:left;
+    background:rgba(2, 2, 91, 0.483);
+    
+}
+.row_line {
+    border-left: solid 2px rgb(207, 4, 173);
+    padding-right: 10px;
+}
+
+th {
+    width: 420px;
+}
+
+td {
+    justify-content:space-evenly;
+}
+
+#heading1{
+    border-top: solid rgb(202, 4, 162) 2px;
+    width: 770px;
+}
+form {
+    display: flex;
+    padding: 20px;
+    position: relative;
+    left: 14%;
+}
+
+#add_button {
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 36%;
+    top: 82%;
+    padding: 5px;
+    box-shadow: 6px 4px rgb(159, 33, 134);
+}

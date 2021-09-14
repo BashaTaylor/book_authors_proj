@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Lora, serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgba(0, 139, 139, 0.814); */
+    background-size: cover;
+    background-image: url(./images/computer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px 10px 0 10px;
+}
+
+#registration {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px;
+    align-items: center;
+}
+
+h1 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color:rgb(31, 233, 233);
+}
+#login {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px;
+    align-items: center;
+}
+
+.style_form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+label, input {
+    padding:5px;
+    
+}
+
+label {
+    color:rgb(241, 77, 48);
+}
+button {
+    align-items: flex-end;
+    margin: 5px;
+}

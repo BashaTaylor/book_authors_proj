@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#container {
+    width: 980px;
+    height: 540px;
+    display: flex;
+    background-image: url('images/garden.jpeg');
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 30px;
+    color: rgb(226, 204, 61);
+    font-size: larger;
+}
+
+form {
+    width: 980px;
+    text-align: right;
+}
+
+h1 {
+    display: flex;
+    width: 980px;
+    padding: 10px;
+    
+}
+
+#plant{
+    padding-left: 10px;
+}
+
+#color {
+    padding-left: 20px;
+}
+
+.nav {
+    display: flex;
+    width: 1040px;
+    height: 60px;
+    background: linear-gradient(135deg, #3F780C 0%, #5AC719 63%, #3F780C 100%);
+    text-shadow: 0 0 10px #FFFFFF;
+    color: #FFFFFF;
+    margin: 20px;
+}
+
+

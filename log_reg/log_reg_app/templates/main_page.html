@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/main_page.css' %}">
+    <title>Main Page</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Welcome</h1><br>
+        <a id="log_out_link" href="/">Log Out</a>
+    </div>
+    <div id="container">
+        <h3>Sucess! Welcome, {{user.first_name}}</h3>
+        <h4>Successfully registered (or logged in)!</h4>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione soluta eveniet accusamus, nam, quos quas
+            quidem, ad nemo repudiandae veritatis aperiam id deserunt nobis amet corrupti voluptates quia pariatur
+            dolorum.</p><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione soluta eveniet accusamus, nam, quos quas
+            quidem, ad nemo repudiandae veritatis aperiam id deserunt nobis amet corrupti voluptates quia pariatur
+            dolorum.</p>
+        </div>
+
+</body>
+
+</html>

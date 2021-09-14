@@ -1,0 +1,94 @@
+Instructions:
+//Create the Dojo class model
+Create the Ninja class model
+Create and run the migration files to create the tables in your database
+Create a .txt file where you'll save each of your queries from below
+Run the shell and import your models
+Query: Create 3 new dojos
+Query: Delete the 3 dojos you just created
+Query: Create 3 more dojos
+Query: Create 3 ninjas that belong to the first dojo
+Query: Create 3 ninjas that belong to the second dojo
+Query: Create 3 ninjas that belong to the third dojo
+Query: Retrieve all the ninjas from the first dojo
+Query: Retrieve all the ninjas from the last dojo
+Query: Retrieve the last ninja's dojo
+Add a new text field called "desc" to your Dojo class
+Create and run the migration files to update the table in your database. If needed, provide a default value of "old dojo"
+Query: Create a new dojo
+Submit your .txt file that contains all the queries you ran in the shell//
+
+Code:
+
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/dojo_ninjas_proj
+$ python manage.py shell
+Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:54:40) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from users_app.models import *
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+ModuleNotFoundError: No module named 'users_app'
+>>> from dojo_ninjas_app.models import *
+>>> dojo_one = Dojo.objects.create(name='Smiley', city='New York', state='NY')
+>>> dojo_two = Dojo.objects.create(name='Grupmy', city='Chicago', state='IL')
+>>> dojo_three = Dojo.objects.create(name='Sleepy', city='Los Angeles', state='CA'
+>>> Dojo.objects.all()
+<QuerySet [Smiley New York NY, Grupmy Chicago IL, Sleepy Los Angeles CA]>
+>>> Dojo.objects.get(id=1).delete()
+(1, {'dojo_ninjas_app.Ninja': 0, 'dojo_ninjas_app.Dojo': 1})
+>>> Dojo.objects.all()
+<QuerySet [Grupmy Chicago IL, Sleepy Los Angeles CA]>
+>>> Dojo.objects.get(id=2).delete()
+(1, {'dojo_ninjas_app.Ninja': 0, 'dojo_ninjas_app.Dojo': 1})
+>>> Dojo.objects.get(id=3).delete()
+(1, {'dojo_ninjas_app.Ninja': 0, 'dojo_ninjas_app.Dojo': 1})
+>>> dojo_one = Dojo.objects.create(name='Jonathan', city='Tempa,', state='FL')
+>>> dojo_two = Dojo.objects.create(name='Josh', city='Washington,', state='DC')
+>>> dojo_three = Dojo.objects.create(name='Jason', city='San Diego,', state='CA')
+>>> Dojo.objects.all()
+<QuerySet [Jonathan Tempa, FL, Josh Washington, DC, Jason San Diego, CA]>
+>>>ninja_one = Ninja.objects.create(first_name = 'Samantha', last_name = 'Jones', dojo = dojo_one)
+>>>ninja_one.first_name
+>>>ninja_two = Ninja.objects.create(first_name = 'Mia', last_name = 'Smith', dojo = dojo_one)
+>>>ninja_three = Ninja.objects.create(first_name = 'Sophie', last_name = 'Cowell', dojo = dojo_one)
+>>>ninja_four = Ninja.objects.create(first_name = 'Paul', last_name = 'Jones', dojo = dojo_two)
+>>>ninja_five = Ninja.objects.create(first_name = 'Mark', last_name = 'Smith', dojo = dojo_two)
+>>>ninja_six = Ninja.objects.create(first_name = 'Stephen', last_name = 'Cowell', dojo = dojo_two)
+>>>ninja_seven = Ninja.objects.create(first_name = 'Paul', last_name = 'Jones', dojo = dojo_three)
+>>>ninja_eight = Ninja.objects.create(first_name = 'Mark', last_name = 'Smith', dojo = dojo_three)
+>>>ninja_nine = Ninja.objects.create(first_name = 'Stephen', last_name = 'Cowell', dojo = dojo_three)
+>>>Ninja.objects.all()
+>>>Dojo.objects.first().ninjas.all()\
+...
+<QuerySet [Samantha Jones, Mia Smith, Sophie Cowell]>
+>>>Dojo.objects.last().ninjas.all()\
+>>> Ninja.objects.last()
+Stephen Cowell
+>>> exit()
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/dojo_ninjas_proj
+$ python manage.py makemigrations
+Migrations for 'dojo_ninjas_app':
+  dojo_ninjas_app\migrations\0002_dojo_description.py
+    - Add field description to dojo
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/dojo_ninjas_proj
+$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, dojo_ninjas_app, sessions
+Running migrations:
+  Applying dojo_ninjas_app.0002_dojo_description... OK
+(djangoPy3Env)
+basha@BashDESKTOP-V8HPRHJ MINGW64 ~/OneDrive/desktop/PT_Python_Stack/Django/dojo_ninjas_proj
+$ python manage.py shell
+Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:54:40) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> dojo_four = Dojo.objects.create(name='Mike', city='San Francisco,', state='CA')
+
+
+
+
+
